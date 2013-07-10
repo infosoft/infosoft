@@ -1,0 +1,35 @@
+{%extends 'base.html' %}
+{%block title%} Inicios - Infosoft Sistemas {% endblock %}
+{% block content %}
+<!-- Jumbotron -->
+      <div class="jumbotron">
+        {# <h1>INFOSOFT</h1> #}
+        <h2>La primera Casa de Software del Estado Falcón!</h2>
+        <p class="lead">Estamos desarrollando aplicaciones para solucionar los problemas de las empresas desde el año 1992, siempre tomando en cuenta en hacer los procesos lo mas facil posible.</p>
+        {# <a class="btn btn-large btn-success" href="#">Get started today</a> #}
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid " >
+        <div class="span4 productos" >
+          <h3>Sistema Administrativo</h3>
+          <img src="{{ STATIC_URL }}img/adm.jpeg" alt="administrativo">
+          <p>Nuestro Sistemas administrativos se adaptan facilmente a su empresa y actualmente se encuentra funcionando en : Farmacias, Ferreterias, Computación, Celulares, Tiendas de Ropa, Supermercados, Autorepuestos </p>
+          <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
+        </div>
+        <div class="productos span4">
+          <h2>Punto de Venta</h2>
+          <img src="{{ STATIC_URL }}img/pventa.jpeg" alt="administrativo">
+          <p>El Punto de Venta Infosoft es el mas facil de usar, es tan sencillo que en solo 2 horas usted podra dominarlo.  </p>
+          <a class="btn" href="#">Ver detalles &raquo;</a>
+       </div>
+        <div class="span4 productos">
+          <h2>Restaurantes</h2>
+          <img src="{{ STATIC_URL }}img/rest.jpeg" alt="administrativo">
+          <p>Para restaurantes tenemos el módulo que facilita el manejo de mesas, pedidos, y facturación de la manera mas facil y sencilla, Compruebelo!.</p>
+          <p><a class="btn" href="#">Ver detalles &raquo;</a></p>
+        </div>
+      </div>
+{% endblock %}
